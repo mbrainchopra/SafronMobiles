@@ -1,0 +1,48 @@
+.container {
+  background: #f7f7f8;
+  padding: 10px 30px;
+ border-bottom: 1px #d9d9d9 solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offer_txt {
+  font-size: 0.8rem;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+    font-size: 0.8rem;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* .nav-container li:not(:last-child) {
+    border-right: 1px solid #d9d9d9;
+} */
+.nav-container li:not(:last-child) {
+  border-right: 1px solid #d9d9d9;
+}
+.nav-container li:hover {
+  color: var(--primary);
+}
+
+.nav-icon {
+  font-size: 16px;
+}
+
+.offercount {
+  color: var(--primary);
+  font-weight: 600;
+}

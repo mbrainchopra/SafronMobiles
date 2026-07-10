@@ -1,0 +1,133 @@
+:root {
+  /* ========================================
+     BRAND COLORS
+  ======================================== */
+
+  --primary: #ff6b00;
+  --primary-light: #ff8c33;
+  --primary-dark: #e65c00;
+  --primary-hover: #ff7a1a;
+
+  /* ========================================
+     BACKGROUND COLORS
+  ======================================== */
+
+  --background: #ffffff;
+  --background-light: #f8f9fa;
+  --background-secondary: #f5f5f5;
+  --background-card: #ffffff;
+  --background-footer: #fafafa;
+  --background-hover: #fff4ec;
+
+  /* ========================================
+     TEXT COLORS
+  ======================================== */
+
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --text-light: #999999;
+  --text-white: #ffffff;
+
+  /* ========================================
+     BORDER COLORS
+  ======================================== */
+
+  --border: #e5e5e5;
+  --border-light: #f0f0f0;
+  --border-dark: #d6d6d6;
+  
+
+  /* ========================================
+     STATUS COLORS
+  ======================================== */
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --info: #3b82f6;
+
+  /* ========================================
+     STAR RATING
+  ======================================== */
+
+  --star: #ffb800;
+
+  /* ========================================
+     PRODUCT PRICE
+  ======================================== */
+
+  --price: #111827;
+  --old-price: #9ca3af;
+  --discount: #ff6b00;
+
+  /* ========================================
+     BUTTON COLORS
+  ======================================== */
+
+  --btn-primary: var(--primary);
+  --btn-primary-hover: var(--primary-dark);
+
+  --btn-secondary: #ffffff;
+  --btn-secondary-hover: #f5f5f5;
+
+  /* ========================================
+     SHADOWS
+  ======================================== */
+
+  --shadow-sm: rgba(0, 0, 0, 0.05);
+  --shadow-md: rgba(0, 0, 0, 0.08);
+  --shadow-lg: rgba(0, 0, 0, 0.12);
+
+  /* ========================================
+     OVERLAY
+  ======================================== */
+
+  --overlay: rgba(0, 0, 0, 0.5);
+
+  /* ========================================
+     ICON COLORS
+  ======================================== */
+
+  --icon: #555555;
+  --icon-light: #888888;
+  --icon-primary: var(--primary);
+
+  /* ========================================
+     INPUT COLORS
+  ======================================== */
+ 
+  --input-bg: #ffffff;
+  --input-border: #dddddd;
+  --input-focus: var(--primary);
+  --placeholder: #aaaaaa;
+
+  /* ========================================
+     NAVBAR
+  ======================================== */
+  --topnav-bg:#F7F7F8;
+  --navbar-bg: #ffffff;
+  --navbar-text: #222222;
+  --navbar-hover: var(--primary);
+
+  /* ========================================
+     FOOTER
+  ======================================== */
+
+  --footer-bg: #ffffff;
+  --footer-text: #666666;
+  --footer-heading: #222222;
+
+  /* ========================================
+     BADGES
+  ======================================== */
+
+  --badge-sale: #ff6b00;
+  --badge-new: #22c55e;
+  --badge-hot: #ef4444;
+
+  /* ========================================
+     TRANSITIONS
+  ======================================== */
+
+  --transition: all 0.3s ease;
+}
