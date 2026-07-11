@@ -9,30 +9,51 @@ import { FaAngleDown } from "react-icons/fa6";
 import { RiShoppingCartLine } from "react-icons/ri";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { IoIosSearch } from "react-icons/io";
-
-
+import { useState } from "react";
+import { IoCloseCircleOutline } from "react-icons/io5";
 export default function TopBar() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   return (
     <>
+      <div className={`menu_dialogue ${isDrawerOpen ? "open" : ""}`}>
+        <div className="drawer-header">
+          <IoCloseCircleOutline
+            className="close-btn"
+            onClick={() => setIsDrawerOpen(false)}
+          />
+        </div>
+
+        <ul className="dialogue_menu_container">
+          <li>Home</li>
+     
+                  <li>Account</li>
+                       <li>Cart</li>
+          <li>Track Order</li>
+          <li>Support</li>
+           <li>Shop Location</li>
+        </ul>
+      </div>
+
       <div className="topBar">
-        <HiMenuAlt2 className="menu_icon"/>
+        <HiMenuAlt2
+          className="menu_icon"
+          onClick={() => setIsDrawerOpen(true)}
+        />
         <div className="logo">
           <Link to="/">
             <img className="logo-img" src={logo} alt="Logo" />
           </Link>
         </div>
         <div className="icons_mobile">
-  
-              <div className="cart-icon-mobile">
-                <FiShoppingCart className="cart-icon-mobile" />
-                <span className="cart-count-mobile">0</span>
-              </div>
+          <div className="cart-icon-mobile">
+            <FiShoppingCart className="cart-icon-mobile" />
+            <span className="cart-count-mobile">0</span>
+          </div>
         </div>
-         
+
         <div className="search-bar">
           <div className="filter">
-              
-            <span>All Categories</span>    <FaAngleDown className="nav-icon" />
+            <span>All Categories</span> <FaAngleDown className="nav-icon" />
           </div>
 
           <input
@@ -62,18 +83,16 @@ export default function TopBar() {
           </ul>
         </div>
       </div>
-          
-        <div className="search-bar-mobile">
-           <IoSearchSharp className="search-bar-mobile-icon" />
 
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Search for mobiles, accessories..."
-          />
+      <div className="search-bar-mobile">
+        <IoSearchSharp className="search-bar-mobile-icon" />
 
-           
-        </div>
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search for mobiles, accessories..."
+        />
+      </div>
     </>
   );
 }

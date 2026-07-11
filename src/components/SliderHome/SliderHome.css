@@ -1,0 +1,39 @@
+.container_slider {
+    position: relative;
+    width: 100%;
+}
+
+.container_slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Common arrow styles */
+.slider_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+.slider_arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Left Arrow */
+.left_arrow {
+    left: 20px;
+}
+
+/* Right Arrow */
+.right_arrow {
+    right: 20px;
+}

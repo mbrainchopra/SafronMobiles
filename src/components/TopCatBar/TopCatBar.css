@@ -1,0 +1,68 @@
+.topcatBar ul {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.catBarMobile {
+  display: none;
+}
+
+.topcatBar ul li:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+.topcatBar ul li.active {
+  font-weight: 600;
+  color: var(--primary);
+  border-bottom: 2px var(--primary) solid;
+}
+
+@media screen and (max-width: 767px) {
+  .topcatBar ul {
+    display: none;
+  }
+  .imageContainer {
+    background-color: #f7f7f8;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+
+  .CatCardMobile img {
+    width: 30px;
+    height: 30px;
+  }
+  .CatCardMobile {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .CatCardMobile:hover {
+    cursor: pointer;
+    color: var(--primary);
+  }
+  .catBarMobile {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    padding: 20px;
+    margin: 0;
+  white-space: nowrap;
+    justify-content: flex-start; /* or remove this line */
+  }
+
+   
+}
