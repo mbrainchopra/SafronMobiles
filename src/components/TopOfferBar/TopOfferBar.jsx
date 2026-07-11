@@ -1,10 +1,15 @@
 import React from "react";
 import "./TopOfferBar.css";
 import { FiMapPin, FiHeadphones, FiPackage } from "react-icons/fi";
+ 
+
+
+
 export default function TopOfferBar() {
   return (
     <>
       <div className="container">
+         
         <span className="offer_txt">
           💥Big Summer sale🔥 - Up to <span className="offercount">40%</span> off on
           best smartphones!
