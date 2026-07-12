@@ -4,7 +4,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { FaRegUser } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { IoSearchSharp } from "react-icons/io5";
-import logo from "../../assets/images/logo.png";
+import logo from "../../../assets/images/logo.png";
 import { FaAngleDown } from "react-icons/fa6";
 import { RiShoppingCartLine } from "react-icons/ri";
 import { HiMenuAlt2 } from "react-icons/hi";
@@ -25,12 +25,12 @@ export default function TopBar() {
 
         <ul className="dialogue_menu_container">
           <li>Home</li>
-     
-                  <li>Account</li>
-                       <li>Cart</li>
+
+          <li>Account</li>
+          <li>Cart</li>
           <li>Track Order</li>
           <li>Support</li>
-           <li>Shop Location</li>
+          <li>Shop Location</li>
         </ul>
       </div>
 

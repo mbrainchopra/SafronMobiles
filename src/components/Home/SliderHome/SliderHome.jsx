@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
-import slider1 from "../../assets/images/slider_1.jpg";
-import slider2 from "../../assets/images/slider_2.jpg";
+import slider1 from "../../../assets/images/slider_1.jpg";
+import slider2 from "../../../assets/images/slider_2.jpg";
 
 import "./SliderHome.css";
 
@@ -29,13 +29,13 @@ export default function SliderHome() {
     }
   }
 
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setCurrent((prev) => (prev + 1) % slidersData.length);
-//     }, 5000);
+  //   useEffect(() => {
+  //     const interval = setInterval(() => {
+  //       setCurrent((prev) => (prev + 1) % slidersData.length);
+  //     }, 5000);
 
-//     return () => clearInterval(interval);
-//   }, []);
+  //     return () => clearInterval(interval);
+  //   }, []);
 
   return (
     <div className="container_slider">
