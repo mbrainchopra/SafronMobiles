@@ -8,6 +8,9 @@ import SliderHome from "../components/Home/SliderHome/SliderHome";
 import FeaturesBar from "../components/Home/FeaturesBar/FeaturesBar";
 import CategoryHome from "../components/Home/CategoryHome/CategoryHome";
 import TopSaleList from "../components/Home/TopSaleList/TopSaleList";
+import ExchangeBanner from "../components/Home/ExchangeBanner/ExchangeBanner";
+import FeaturesBarBottom from "../components/Home/FeaturesBarBottom/FeaturesBarBottom";
+import Footer from "../components/Home/Footer/Footer";
 
 function Home() {
   return (
@@ -19,6 +22,9 @@ function Home() {
       <FeaturesBar />
       <CategoryHome />
       <TopSaleList/>
+      <ExchangeBanner/>
+      <FeaturesBarBottom/>
+     <Footer/>
     </>
   );
 }

@@ -1,0 +1,130 @@
+.features_bottom_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.features_bottom_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 15px;
+  border-right: 1px solid #eee;
+}
+
+.features_bottom_item:last-child {
+  border-right: none;
+}
+
+.features_bottom_icon_box {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fef4ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features_bottom_icon {
+  font-size: 24px;
+  color: var(--primary);
+}
+
+.features_bottom_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.features_bottom_content span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.3;
+}
+
+.features_bottom_content p {
+  font-size: 13px;
+  color: #888;
+  margin-top: 3px;
+  line-height: 1.3;
+}
+
+/* ================= Desktop ================= */
+
+@media (min-width: 1024px) {
+  .features_bottom_container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ================= Tablet ================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .features_bottom_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features_bottom_item {
+    justify-content: flex-start;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+
+  .features_bottom_item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .features_bottom_item:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+}
+
+/* ================= Mobile ================= */
+
+@media (max-width: 767px) {
+
+  .features_bottom_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features_bottom_item {
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 12px 8px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+
+  .features_bottom_item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .features_bottom_item:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+
+  .features_bottom_icon_box {
+    width: 34px;
+    height: 34px;
+  }
+
+  .features_bottom_icon {
+    font-size: 18px;
+  }
+
+  .features_bottom_content span {
+    font-size: 12px;
+  }
+
+  .features_bottom_content p {
+    font-size: 10px;
+  }
+}
