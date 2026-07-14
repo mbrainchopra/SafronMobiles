@@ -11,7 +11,7 @@ export default function TopOfferBar() {
       <div className="container">
          
         <span className="offer_txt">
-          💥Big Summer sale🔥 - Up to <span className="offercount">40%</span> off on
+          💥Big Summer sale🔥 - Up to <span className="offercount">20%</span> off on
           best smartphones!
         </span>
 
