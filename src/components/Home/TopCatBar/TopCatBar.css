@@ -9,7 +9,17 @@
 .catBarMobile {
   display: none;
 }
-
+.nav-link {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+.nav-link:active {
+    color: #ff6b00;
+}
+.nav-link:hover {
+    color: #ff6b00;
+}
 .topcatBar ul li:hover {
   color: var(--primary);
   cursor: pointer;

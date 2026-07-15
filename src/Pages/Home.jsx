@@ -17,7 +17,7 @@ function Home() {
     <>
       <TopOfferBar />
       <TopBar />
-      <TopCatBar />
+      <TopCatBar  activeIndex={1} />
       <SliderHome />
       <FeaturesBar />
       <CategoryHome />
