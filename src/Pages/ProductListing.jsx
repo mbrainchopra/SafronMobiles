@@ -4,6 +4,7 @@ import TopBar from "../components/Home/TopBar/TopBar";
 import TopCatBar from "../components/Home/TopCatBar/TopCatBar";
 import SideFilter from "../components/ProductList/SideFIlter/SideFilter";
 import Breadcrumb from "../components/ProductList/Breadcrumb/Breadcrumb";
+import Products from "../components/ProductList/Products/Products";
 
 export default function ProductListing() {
   return (
@@ -22,12 +23,18 @@ export default function ProductListing() {
               name: "SmartPhones",
               path: "/product_list",
             },
-            
           ]}
         />
-        <SideFilter />
-
-        
+        <div
+          style={{
+            display: "flex",
+            gap: "20px",
+            alignItems: "flex-start",
+          }}
+        >
+          <SideFilter />
+          <Products />
+        </div>
       </div>
     </>
   );

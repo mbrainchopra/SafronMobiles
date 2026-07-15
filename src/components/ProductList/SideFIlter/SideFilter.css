@@ -1,31 +1,28 @@
-.filter_container{
-     width:18%;
- 
-     overflow-y: auto;
-     height: 100%;
-     border-right: 1px rgb(186, 179, 179) solid;
+.filter_container {
+  width: 18%;
+  margin-top: 15px;
+  overflow-y: auto;
+  height: 100%;
+  border-right: 1px rgb(186, 179, 179) solid;
 }
-.filter_title{
-     display: flex;
-     justify-content: space-between;
-     padding: 10px;
+.filter_title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
-.filter_txt{
-     
-     color: black;
-     font-size: 1rem;
-     font-weight: bold;
-
+.filter_txt {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
 }
-.clear_txt{
-     color: var(--primary);
-     font-size: 1rem;
-          
+.clear_txt {
+  color: var(--primary);
+  font-size: 1rem;
 }
-.clear_txt:hover{
-     color: var(--primary);
-     font-size: 1rem;
-     cursor: pointer;
-     font-weight: 600;
-               transform: scale(1.05);
+.clear_txt:hover {
+  color: var(--primary);
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transform: scale(1.05);
 }
