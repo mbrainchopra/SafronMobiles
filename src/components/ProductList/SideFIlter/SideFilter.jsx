@@ -1,5 +1,6 @@
 import React from "react";
 import "./SideFilter.css";
+import CheckBoxFilter from "../FilterComp/CheckBoxFilter";
 export default function SideFilter() {
   const filterData = {
     brands: [
@@ -163,12 +164,6 @@ export default function SideFilter() {
     ],
   };
 
-
-
- 
-
-
-
   return (
     <>
       <div className="filter_container">
@@ -176,6 +171,22 @@ export default function SideFilter() {
           <span className="filter_txt">Filter</span>
           <span className="clear_txt">Clear All</span>
         </div>
+
+        <CheckBoxFilter
+          props=  {
+            filterData.brands
+          } title="BRANDS"
+        />
+          <CheckBoxFilter
+          props=  {
+            filterData.ram
+          } title="RAM"
+        />
+         <CheckBoxFilter
+          props=  {
+            filterData.storage
+          } title="STORAGE"
+        />
       </div>
     </>
   );

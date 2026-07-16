@@ -1,0 +1,40 @@
+.filter_block{
+     display: flex;
+     justify-content: space-between;
+     padding: 10px;
+    
+     align-items: center;
+    
+}
+.OpenIcon,.CloseIcon:hover{
+     cursor: pointer;
+}
+ 
+
+.checkbox_item input[type="checkbox"]:checked {
+  background: #2874f0;
+}
+
+.checkbox_item input[type="checkbox"]:checked::after {
+ 
+  color: white;
+ 
+}
+.checkbox_item{
+     display: flex;
+     justify-content: flex-start;
+     gap: 5px;
+     padding-left: 10px;
+     padding-bottom: 5px;
+     align-items: center;
+     
+}
+.filter_block_container{
+     display: flex;
+     flex-direction: column;
+     margin-right: 10px;
+     margin-left: 10px;
+
+      border-bottom: 1px solid grey;
+
+}
