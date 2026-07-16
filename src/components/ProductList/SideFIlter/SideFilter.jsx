@@ -97,27 +97,27 @@ export default function SideFilter() {
     ram: [
       {
         id: 1,
-        value: "4 GB",
+        name: "4 GB",
         count: 18,
       },
       {
         id: 2,
-        value: "6 GB",
+        name: "6 GB",
         count: 26,
       },
       {
         id: 3,
-        value: "8 GB",
+        name: "8 GB",
         count: 30,
       },
       {
         id: 4,
-        value: "12 GB",
+        name: "12 GB",
         count: 22,
       },
       {
         id: 5,
-        value: "16 GB",
+        name: "16 GB",
         count: 8,
       },
     ],
@@ -125,27 +125,27 @@ export default function SideFilter() {
     storage: [
       {
         id: 1,
-        value: "64 GB",
+        name: "64 GB",
         count: 15,
       },
       {
         id: 2,
-        value: "128 GB",
+        name: "128 GB",
         count: 25,
       },
       {
         id: 3,
-        value: "256 GB",
+        name: "256 GB",
         count: 32,
       },
       {
         id: 4,
-        value: "512 GB",
+        name: "512 GB",
         count: 18,
       },
       {
         id: 5,
-        value: "1 TB",
+        name: "1 TB",
         count: 6,
       },
     ],
@@ -153,12 +153,12 @@ export default function SideFilter() {
     rating: [
       {
         id: 1,
-        value: 4,
+        name: 4,
         label: "4★ & Above",
       },
       {
         id: 2,
-        value: 3,
+        name: 3,
         label: "3★ & Above",
       },
     ],
